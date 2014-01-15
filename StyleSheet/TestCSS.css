@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	text-shadow: silver 2px 2px 3px !important;
+}
+
+body {
+	overflow-x: hidden !important;
+}
+
+img{
+	-o-box-shadow:2px 2px 4px #333333;
+	-moz-box-shadow:2px 2px 4px #333333;
+	-webkit-box-shadow:2px 2px 4px #333333;
+}
+td.cent {
+	text-align: center;
+}
+
+.main {
+	padding: 5px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.cent {
+	margin-left: 10%;
+}
+
+::selection {
+	background:#d3d3d3; 
+	color:#555;
+}
+
+::-moz-selection {
+	background:#d3d3d3; 
+	color:#555;
+}
+
+::-webkit-selection {
+	background:#d3d3d3; 
+	color:#555;
+}

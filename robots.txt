@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /user/
+Allow: /image/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /JavaScript/
+Disallow: /StyleSheet/
