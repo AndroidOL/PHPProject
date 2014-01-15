@@ -74,7 +74,7 @@
 				if (isset($errorReport)) {
 					echo "<br /><br />检测得到您缺少的表为：" . implode(", ",$errorReport) . "。";
 				}
-				if ($resultNum != 4) {
+				if ($resultNum < 4) {
 					echo "<br /><br />提示：当前您数据库中表数目少于标准，推测您可能是首次运行本脚本。<br />若您需要初始化创建数据表请<a href='./PHP/Configuration.php?action=registerDatabase'>单击此处</a>，若遇到问题请随时向<a href='mailto: wth88888888@gmail.com'>本人反馈</a>。";
 				}
 			}
