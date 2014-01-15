@@ -48,15 +48,7 @@
 		} else { 
 			$_SESSION["admin"] = false; 
 			echo "您似乎尚未登录请先<a href='indexLogin.php?action=Login'>登录账户</a>或<a href='indexLogin.php?action=register'>注册账户</a>以继续操作。";
-			$username = "root";
-			$password = "";
-			$host = "localhost";
-			$sqlname = "test";
-			$mysqli = new mysqli($host, $username, $password, $sqlname);
-			if (mysqli_connect_errno()) {
-				echo "<br />连接至数据库失败！";
-				exit();
-			}
+			require_once("./connectSQL.php");
 			$modeTest = "SHOW TABLES FROM $sqlname";
 			$resultInfo = mysqli_query($mysqli, $modeTest);
 			$resultNum = mysqli_num_rows($resultInfo);

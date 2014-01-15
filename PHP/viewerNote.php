@@ -46,15 +46,7 @@
 				print "<b>感谢您的访问，但是您的访问来源有误，<a href='./voteNote.php?page=1&display=default'>返回上级</a></b>。";
 				exit();
 			}
-			$username = "root";
-			$password = "";
-			$host = "localhost";
-			$sqlname = "test";
-			$mysqli = new mysqli($host, $username, $password, $sqlname);
-			if (mysqli_connect_errno()) {
-				echo "<br />连接至数据库失败！";
-				exit();
-			}
+			require_once("./connectSQL.php");
 			//
 			//
 			//

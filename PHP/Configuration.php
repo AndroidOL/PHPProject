@@ -36,15 +36,8 @@
 			session_start();
 			require '../Encryption/PasswordHash.php';
 			$t_hasher = new PasswordHash(8, FALSE);
-			$username = "root";
-			$password = "";
-			$host = "localhost";
-			$sqlname = "test";
-			$mysqli = new mysqli($host, $username, $password, $sqlname);
-			if (mysqli_connect_errno()) {
-				echo "<br />连接至数据库失败！";
-				exit();
-			}
+			
+			require_once("./connectSQL.php");
 			if (@$_GET["action"] == "registerDatabase") {
 				$sqlCreate = "CREATE TABLE notecontent (
 					idnum int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
