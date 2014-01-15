@@ -145,7 +145,7 @@
 							<input id="searchInfo" name="searchInfo" type="text" placeholder="搜索主题" />
 						</li>
 						<li>
-							<a href="#" class="button [tiny small large]" onclick="searchInfo('getThread');">Default Button</a>
+							<a href="#" class="button [tiny small large]" onclick="searchInfo('getThread');">搜索</a>
 						</li>
 						<li><a href="#"><?=$_SESSION["showInfo"]?></a></li>
 						<li><a href="#top">返回顶部</a></li>
