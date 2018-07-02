@@ -9,7 +9,7 @@
 		<meta name="description" content="This page just for TEST!" />
 		<meta name="author" content="Wu Tianhao, wth88888888@gmail.com" />
 	<!-- Web TITLE -->
-		<title>报名查询管理系统</title>
+		<title>数据库配置</title>
 	<!-- External LINK -->
 		<link type="text/css" rel="stylesheet" href="../StyleSheet/TestCSS.css?ver=0601" />
 		<link type="text/css" rel="stylesheet" href="../StyleSheet/foundation.css?ver=0601" />
