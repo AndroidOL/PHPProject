@@ -64,15 +64,7 @@
 				echo "<br />未指定操作方式，<a href='./voteNote.php?page=1&display=" . $_GET["display"] . "'>返回上级</a>。";
 				exit();
 			}
-			$username = "root";
-			$password = "";
-			$host = "localhost";
-			$sqlname = "test";
-			$mysqli = new mysqli($host, $username, $password, $sqlname);
-			if (mysqli_connect_errno()) {
-				echo "<br />连接至数据库失败！";
-				exit();
-			}
+			require_once("./connectSQL.php");
 			//
 			//
 			//

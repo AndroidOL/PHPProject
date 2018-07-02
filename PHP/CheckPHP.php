@@ -40,15 +40,8 @@
 				print "<b>感谢您的访问，但是您的访问来源有误，<a href='../index.php'>返回首页</a>。</b><br />";
 				exit();
 			}
-			$username = "root";
-			$password = "";
-			$host = "localhost";
-			$sqlname = "test";
-			$mysqli = new mysqli($host, $username, $password, $sqlname);
-			if (mysqli_connect_errno()) {
-				echo "<br /><b>连接至数据库失败！</b>";
-				exit();
-			}
+			
+			require_once("./connectSQL.php");
 			$modeTest = "SELECT * FROM userinfo WHERE UID='$_POST[UIDSearcherCheck]'";
 			$resultInfo = mysqli_query($mysqli, $modeTest);
 			$resultNum = mysqli_num_rows($resultInfo);

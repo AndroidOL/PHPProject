@@ -42,15 +42,7 @@
 				echo "<b>感谢您的访问，但是您的访问来源有误，<a href='javascript: void(0);' onclick='history.back()'>返回上页</a>。</b><br />";
 				exit();
 			}
-			$username = "root";
-			$password = "";
-			$host = "localhost";
-			$sqlname = "test";
-			$mysqli = new mysqli($host, $username, $password, $sqlname);
-			if (mysqli_connect_errno()) {
-				echo "<br />连接至数据库失败！";
-				exit();
-			}
+			require_once("./connectSQL.php");
 			//
 			//
 			//
